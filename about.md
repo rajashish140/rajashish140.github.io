@@ -12,4 +12,4 @@ My name is Ashish, and I enjoy Reverse Engineering malware, Threat Intelligence 
 
 ### Contact me
 
-[email@domain.com](mailto:rajashish140@gmail.com)
+[rajashish140@gmail.com](mailto:rajashish140@gmail.com)
