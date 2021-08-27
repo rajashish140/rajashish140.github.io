@@ -1,0 +1,22 @@
+---
+layout: post
+title: You're up and running!
+---
+
+The LOCKBIT 2.0 ransomware group has been highly active in the past few months and
+It has gained huge popularity among threat actors since the first version of the ransomware family appeared in September 2019. It is distributed via various underground (russian)forums, and targets victims in the United States, Canada, Europe, Asia, and Latin America.
+LOCKBIT 2.0 developers customize ransomware variants as per their affiliates’ needs.
+The malware uses the double extortion technique to compel victims into paying ransoms. Through this technique, attackers exfiltrate the victim’s data, after which they proceed to encrypt the data on the victim’s system. Data encryption is followed by the attackers demand ransom in exchange for a decryptor. If the victim refuses or cannot pay the ransom, the attackers threatens to leak the data.The extension used by this ransomware is .lockbit.
+
+<h1>Technical Analysis</h1>
+
+<h2>Anti-Debug<h2>
+ From a first glance at the recent LockBit sample with a reverse-engineering tool, we can tell that the program was written primarily in C++ with some additions made using Assembler. For example, a few anti-debug techniques employ the fs:30h function call to manually check the PEB (Process Environment Block) for the BeingDebugged flag, instead of using IsDebuggerPresent().
+ ![Image description](/images\lockbit\antidebug.png)
+
+ <h2>Decrypting String<h2>
+
+
+![_config.yml]({{ site.baseurl }}/images/config.png)
+
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
