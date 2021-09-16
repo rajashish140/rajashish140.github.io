@@ -7,6 +7,8 @@ One of the most devastating attacks you need to watch out for when developing sm
 The hacker exploited a bug in the code of the DAO and stole more or less $50 million worth of ether
 
 ![ether-wallpaper](/images/reentrancy/ether.jpg)
+<h2>Story time</h2>
+On July 19 2017, a hacker or a group of hackers transferred more than 150K ether from ethereum multi-signature contracts to their account. Furthermore, a group called “White Hat Group” drained over 350K ether following the attack. The white hat group used the same code vulnerability as the hackers did in their attack and claimed on reddit to return the drained ether after getting compensated by DAO for gas cost -- whether it will happen remains to be seen.
 
 <h2>Basic concepts</h2>
 
@@ -62,6 +64,13 @@ In this example, withdraw calls the attacker’s fallback function same as with 
 The difference is the fallback function makes a call to transfer instead of recursively calling withdraw. Because the balance has not been set to 0 before this call, the transfer function can transfer a balance that has already been spent.
 
 This vulnerability was also used in the DAO attack.
+
+<h2>The DAO Attack of 2016</h2>
+Attackers used a combination of these two types of Reentrancy Attacks: Single Function & Cross Function.
+
+The attackers were able to siphon 3.6 Million Ether from the DAO Smart Contract to their own accounts. Fortunately, the Ethereum community decided to Hard Fork and restored all the funds to the original Smart Contract. However, this led to a lot of controversy and led to the infamous Ethereum and Ethereum Classic network split.
+
+Up to today, Ethereum bears the stain of the DAO controversy – albeit fading with time. It would be a disaster if it were to happen all over again.
 
 <h2>Integer Overflow and Underflow</h2>
 
